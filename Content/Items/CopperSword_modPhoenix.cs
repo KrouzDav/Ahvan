@@ -12,7 +12,7 @@ namespace Ahvan.Content.Items
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.Ahvan.hjson' file.
 		public override void SetDefaults()
 		{
-			Item.damage = 50;
+			Item.damage = 10;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 40;
 			Item.height = 40;
@@ -29,9 +29,14 @@ namespace Ahvan.Content.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
+            recipe.AddIngredient(ItemID.CopperBar, 10);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.Register();
-		}
+
+            Recipe recipe2 = CreateRecipe();
+            recipe2.AddIngredient(ItemID.TinBar, 10);
+            recipe2.AddTile(TileID.WorkBenches);
+            recipe2.Register();
+        }
 	}
 }

@@ -2,12 +2,7 @@
 
 Items: {
 	CopperSword_modPhoenix: {
-		DisplayName: "Copper Sword_mod Phoenix"
-		Tooltip:
-			'''
-			Template of an item
-			Replacing this tooltip is duty 
-			It's snowing on Mt.Fuji
-			'''
+		DisplayName: Медно-оловянный меч
+		Tooltip: Первый меч. Он наносит маленький урон, зато с авто-атакой. Вам ведь только это и надо, верно?
 	}
 }
